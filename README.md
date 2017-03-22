@@ -2,7 +2,7 @@
 　　
 　　Vue 最为基础的就是动态数据绑定，也是最为有用的一个功能。那么就跟随ife来一次vue的源码深入，好好的了解一下其中动态数据绑定的原理吧。
 
-##Task1
+# Task1
 
 请实现这样的一个 Observer，要求如下：
 
@@ -11,7 +11,8 @@
 3.通过 data 访问属性和设置属性的时候，均能打印出右侧对应的信息。
 代码如下：（放在浏览器环境下运行）
 
-`function Observer(data) {
+``
+function Observer(data) {
 	this.data = data;
 	this.walk(data);
 }
@@ -58,5 +59,6 @@ let app = new Observer({
 			}
 		}
 	}
-});`
+});
+``
 　　
