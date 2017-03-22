@@ -7,11 +7,14 @@
 请实现这样的一个 Observer，要求如下：
 
 1.传入参数只考虑对象，不考虑数组。
+
 2.new Observer返回一个对象，其 data 属性要能够访问到传递进去的对象。
+
 3.通过 data 访问属性和设置属性的时候，均能打印出右侧对应的信息。
+
 代码如下：（放在浏览器环境下运行）
 
-``
+```
 function Observer(data) {
 	this.data = data;
 	this.walk(data);
@@ -60,5 +63,6 @@ let app = new Observer({
 		}
 	}
 });
-``
+
+```
 　　
