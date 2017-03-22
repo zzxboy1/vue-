@@ -21,6 +21,7 @@ function Observer(data) {
 }
 
 let p = Observer.prototype;
+
 p.walk = function(data) {
    let val;
    for (let key in data) {
